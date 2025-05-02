@@ -5,69 +5,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Phoenix</title>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
       margin: 0;
-      font-family: 'Libre Caslon Text', serif;
+      font-family: 'Josefin Slab', serif;
       background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #f5f5f5;
+      color: #fff4e6;
     }
     h1 {
+      font-family: 'Unica One', cursive;
       text-align: center;
-      margin: 30px 10px 20px;
+      margin: 20px 0;
       font-size: 2.5em;
-      text-shadow: 0 0 10px #000;
+      color: #ffe4b3;
+      text-shadow: 2px 2px 5px #000;
     }
     .grid {
       display: flex;
       flex-direction: column;
       gap: 20px;
-      padding: 20px;
+      padding: 15px;
     }
     .card {
-      background-color: rgba(0, 0, 0, 0.65);
+      background-color: rgba(0, 0, 0, 0.75);
       border-radius: 12px;
-      padding: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
-      backdrop-filter: blur(4px);
+      overflow: hidden;
+      box-shadow: 0 0 14px rgba(0,0,0,0.6);
+      backdrop-filter: blur(6px);
     }
     .card img {
       width: 100%;
-      max-height: 300px;
-      object-fit: cover;
-      border-radius: 6px;
+      height: auto;
+      display: block;
     }
     .card p {
-      font-size: 1em;
-      margin: 10px 0;
-      color: #ffddc1;
+      font-size: 1.1em;
+      padding: 10px;
+      margin: 0;
+      color: #ffcc99;
+      font-family: 'Josefin Slab', serif;
     }
     .btn {
-      display: inline-block;
-      padding: 10px 15px;
-      background-color: #ff4444;
+      display: block;
+      margin: 0 10px 15px;
+      padding: 10px;
+      background-color: #ff5e3a;
       color: white;
+      text-align: center;
+      border-radius: 6px;
       text-decoration: none;
-      border-radius: 5px;
       font-weight: bold;
+      font-family: 'Unica One', cursive;
     }
     .btn:hover {
-      background-color: #cc0000;
-    }
-    @media (min-width: 768px) {
-      .grid {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      .card {
-        width: calc(50% - 40px);
-      }
+      background-color: #cc3c1d;
     }
   </style>
 </head>
@@ -75,61 +68,61 @@
   <h1>Phoenix</h1>
   <div class="grid">
     <div class="card">
-      <img src="product1.jpg" alt="Product 1">
-      <p>🔥 Товар #1 — в наличии</p>
+      <img src="product1.jpg" alt="Товар 1" />
+      <p>🔥 Эксклюзивный товар #1 — доступен</p>
       <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
     <div class="card">
-      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+2" alt="Product">
+      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+2" alt="Product 2">
       <p>🔥 Товар #2 — доступен</p>
       <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
     <div class="card">
-      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+3" alt="Product">
+      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+3" alt="Product 3">
       <p>🔥 Товар #3 — доступен</p>
       <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
     <div class="card">
-      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+4" alt="Product">
+      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+4" alt="Product 4">
       <p>🔥 Товар #4 — доступен</p>
       <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
     <div class="card">
-      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+5" alt="Product">
+      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+5" alt="Product 5">
       <p>🔥 Товар #5 — доступен</p>
       <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
     <div class="card">
-      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+6" alt="Product">
+      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+6" alt="Product 6">
       <p>🔥 Товар #6 — доступен</p>
       <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
     <div class="card">
-      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+7" alt="Product">
+      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+7" alt="Product 7">
       <p>🔥 Товар #7 — доступен</p>
       <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
     <div class="card">
-      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+8" alt="Product">
+      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+8" alt="Product 8">
       <p>🔥 Товар #8 — доступен</p>
       <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
     <div class="card">
-      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+9" alt="Product">
+      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+9" alt="Product 9">
       <p>🔥 Товар #9 — доступен</p>
       <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
     <div class="card">
-      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+10" alt="Product">
+      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+10" alt="Product 10">
       <p>🔥 Товар #10 — доступен</p>
       <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
