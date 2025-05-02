@@ -7,124 +7,121 @@
   <title>Phoenix</title>
   <link href="https://fonts.googleapis.com/css2?family=Unica+One&family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
   <style>
-    * {{ box-sizing: border-box; }}
-    body {{
+    * { box-sizing: border-box; }
+    body {
       margin: 0;
       font-family: 'Josefin Slab', serif;
-      background: linear-gradient(135deg, #2b0000, #4b1f00, #7b2f00);
-      background-size: 400% 400%;
-      animation: gradient 20s ease infinite;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #fff4e6;
-    }}
-    @keyframes gradient {{
-      0% {{background-position: 0% 50%;}}
-      50% {{background-position: 100% 50%;}}
-      100% {{background-position: 0% 50%;}}
-    }}
-    header {{
+    }
+    header {
       text-align: center;
       padding: 20px;
-    }}
-    h1 {{
+    }
+    h1 {
       font-family: 'Unica One', cursive;
       font-size: 2.5em;
       margin: 0;
       color: #ffe4b3;
       text-shadow: 1px 1px 4px #000;
-    }}
-    nav {{
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      padding: 10px 0;
-    }}
-    nav button {{
+    }
+    nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+    nav a {
       font-family: 'Unica One', cursive;
       background: #ff5e3a;
       color: white;
       padding: 10px 15px;
-      border: none;
       border-radius: 6px;
-      cursor: pointer;
-    }}
-    nav button:hover {{
+      text-decoration: none;
+    }
+    nav a:hover {
       background: #cc3c1d;
-    }}
-    section {{
-      display: none;
-      padding: 20px;
-    }}
-    section.active {{
-      display: block;
-    }}
-    .card {{
+    }
+    .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 15px;
+    }
+    .card {
       background: rgba(0,0,0,0.65);
       padding: 15px;
       border-radius: 10px;
-      margin-bottom: 20px;
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }}
-    .card img {{
+    }
+    .card img {
       width: 100%;
       max-height: 300px;
       object-fit: cover;
       border-radius: 6px;
-    }}
-    .card p {{
+    }
+    .card p {
       color: #ffcc99;
       margin-top: 10px;
-    }}
+    }
   </style>
-  <script>
-    function showSection(id) {{
-      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-    }}
-  </script>
 </head>
 <body>
   <header>
     <h1>Phoenix</h1>
-    <nav>
-      <button onclick="showSection('main')">Главная</button>
-      <button onclick="showSection('reviews')">Отзывы</button>
-      <button onclick="showSection('promos')">Акции</button>
-      <button onclick="showSection('about')">О магазине</button>
-    </nav>
+    <nav><a href="reviews.html">Отзывы</a></nav>
   </header>
 
-  <section id="main" class="active">
+  <div class="grid">
     <div class="card">
       <img src="product1.jpg" alt="Товар 1" />
       <p>🔥 Эксклюзивный товар #1 — доступен</p>
     </div>
+    
     <div class="card">
       <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+2" alt="Product 2">
       <p>🔥 Товар #2 — доступен</p>
     </div>
-  </section>
-
-  <section id="reviews">
+    
     <div class="card">
-      <p>Покупатель A: Всё пришло быстро, спасибо!</p>
+      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+3" alt="Product 3">
+      <p>🔥 Товар #3 — доступен</p>
     </div>
+    
     <div class="card">
-      <img src="https://placehold.co/400x300/222222/FF9900?text=Фото+отзыва">
-      <p>Реальный отзыв клиента</p>
+      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+4" alt="Product 4">
+      <p>🔥 Товар #4 — доступен</p>
     </div>
-  </section>
-
-  <section id="promos">
+    
     <div class="card">
-      <p>До конца недели — скидка 20% на все курсы!</p>
+      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+5" alt="Product 5">
+      <p>🔥 Товар #5 — доступен</p>
     </div>
-  </section>
-
-  <section id="about">
+    
     <div class="card">
-      <p>Мы работаем с 2020 года. Только проверенные поставки. Надёжность и конфиденциальность — наш приоритет.</p>
+      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+6" alt="Product 6">
+      <p>🔥 Товар #6 — доступен</p>
     </div>
-  </section>
+    
+    <div class="card">
+      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+7" alt="Product 7">
+      <p>🔥 Товар #7 — доступен</p>
+    </div>
+    
+    <div class="card">
+      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+8" alt="Product 8">
+      <p>🔥 Товар #8 — доступен</p>
+    </div>
+    
+    <div class="card">
+      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+9" alt="Product 9">
+      <p>🔥 Товар #9 — доступен</p>
+    </div>
+    
+    <div class="card">
+      <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+10" alt="Product 10">
+      <p>🔥 Товар #10 — доступен</p>
+    </div>
+    
+  </div>
 </body>
 </html>
