@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Контакты</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #3b0a4c, #ff6a00);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      color: #fff4e6;
+      padding: 20px;
+    }
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    h1 {
+      text-align: center;
+      color: #ffe4b3;
+    }
+    .content {
+      max-width: 600px;
+      margin: auto;
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+      color: #ffcc99;
+    }
+    .btn {
+      display: block;
+      text-align: center;
+      background: #ff5e3a;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 30px;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: #cc3c1d;
+    }
+  </style>
+</head>
+<body>
+  <h1>Контакты</h1>
+  <div class="content">
+    <p>Если у вас есть вопросы или предложения, свяжитесь с нами:</p>
+    <p>Email: <a href="mailto:support@example.com" style="color: #ffd699;">support@example.com</a></p>
+    <p>Telegram: <a href="https://t.me/sin_operat" target="_blank" style="color: #ffd699;">@sin_operat</a></p>
+    <p>Мы стараемся отвечать в течение 24 часов.</p>
+
+    <a href="index.html" class="btn">← Назад на главную</a>
+  </div>
+</body>
+</html>
