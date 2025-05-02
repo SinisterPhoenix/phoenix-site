@@ -10,12 +10,10 @@
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: 'Josefin Slab', serif;
-      
-background: linear-gradient(135deg, #3b0a4c, #ff6a00);
-background-size: 400% 400%;
-animation: gradient 15s ease infinite;
-
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #3b0a4c, #ff6a00);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
       color: #fff4e6;
     }
     @keyframes gradient {
@@ -50,8 +48,8 @@ animation: gradient 15s ease infinite;
       background: #cc3c1d;
     }
     .grid {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
       padding: 15px;
     }
@@ -63,7 +61,8 @@ animation: gradient 15s ease infinite;
     }
     .card img {
       width: 100%;
-      max-height: 300px;
+      height: auto;
+      max-height: 240px;
       object-fit: cover;
       border-radius: 6px;
     }
@@ -84,11 +83,12 @@ animation: gradient 15s ease infinite;
       background: #cc3c1d;
     }
   </style>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>Phoenix</h1>
-    <nav><a href="reviews.html">Отзывы</a></nav>
+    <nav><a href="reviews.html">Отзывы</a> <a href="mailto:example@email.com" style="margin-left: 10px;">Контакты</a></nav>
   </header>
 
   <div class="grid">
