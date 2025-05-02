@@ -11,9 +11,17 @@
     body {
       margin: 0;
       font-family: 'Josefin Slab', serif;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
+      
+background: linear-gradient(135deg, #3b0a4c, #ff6a00);
+background-size: 400% 400%;
+animation: gradient 15s ease infinite;
+
       color: #fff4e6;
+    }
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
     }
     header {
       text-align: center;
@@ -61,7 +69,19 @@
     }
     .card p {
       color: #ffcc99;
-      margin-top: 10px;
+      margin: 10px 0;
+    }
+    .btn {
+      display: inline-block;
+      background: #ff5e3a;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-family: 'Unica One', cursive;
+    }
+    .btn:hover {
+      background: #cc3c1d;
     }
   </style>
 </head>
@@ -75,51 +95,61 @@
     <div class="card">
       <img src="product1.jpg" alt="Товар 1" />
       <p>🔥 Эксклюзивный товар #1 — доступен</p>
+      <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
     <div class="card">
       <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+2" alt="Product 2">
       <p>🔥 Товар #2 — доступен</p>
+      <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
     <div class="card">
       <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+3" alt="Product 3">
       <p>🔥 Товар #3 — доступен</p>
+      <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
     <div class="card">
       <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+4" alt="Product 4">
       <p>🔥 Товар #4 — доступен</p>
+      <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
     <div class="card">
       <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+5" alt="Product 5">
       <p>🔥 Товар #5 — доступен</p>
+      <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
     <div class="card">
       <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+6" alt="Product 6">
       <p>🔥 Товар #6 — доступен</p>
+      <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
     <div class="card">
       <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+7" alt="Product 7">
       <p>🔥 Товар #7 — доступен</p>
+      <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
     <div class="card">
       <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+8" alt="Product 8">
       <p>🔥 Товар #8 — доступен</p>
+      <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
     <div class="card">
       <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+9" alt="Product 9">
       <p>🔥 Товар #9 — доступен</p>
+      <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
     <div class="card">
       <img src="https://placehold.co/400x300/111111/FF6600?text=Товар+10" alt="Product 10">
       <p>🔥 Товар #10 — доступен</p>
+      <a class="btn" href="https://t.me/sin_operat" target="_blank">Заказать</a>
     </div>
     
   </div>
